@@ -1,9 +1,9 @@
 import reactLogo from './assets/react.svg'
 import './App.css'
-import Star from '../src/assets/star.svg?react';
-import Star2 from '../src/assets/star2.svg?react';
-import Logo from '../src/assets/control-logo.svg?react';
-import Logo2 from '../src/assets/control-logo2.svg?react';
+import Star from '../src/assets/s1.svg?react';
+import Star3 from '../src/assets/s3.svg?react';
+import Star11 from '../src/assets/s11.svg?react';
+import Star111 from '../src/assets/s111.svg?react';
 
 function App() {
   return (
@@ -14,22 +14,26 @@ function App() {
       </div>
       <div>
         <p>Иконка 2:</p>
-        <Star className="star" />
+        <div style={{ width: '42px', height: '42px' }}>
+          <Star className="star"/>
+        </div>
       </div>
       <div>
         <p>Иконка 3:</p>
-        <div style={{width: '42px', height: '42px'}}>
-          <Star2 className="star" />
+        <div style={{ width: '42px', height: '42px' }}>
+          <Star11 className="star"/>
         </div>
       </div>
       <div>
         <p>Иконка 4:</p>
-        <Logo />
+        <div style={{ width: '42px', height: '42px' }}>
+          <Star3 className="star"/>
+        </div>
       </div>
       <div>
         <p>Иконка 5:</p>
-        <div style={{ width: '210px', height: '21px' }}>
-          <Logo2/>
+        <div style={{ width: '42px', height: '42px' }}>
+          <Star111 className="star"/>
         </div>
       </div>
     </div>
