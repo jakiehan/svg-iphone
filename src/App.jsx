@@ -14,12 +14,12 @@ function App() {
       </div>
       <div>
         <p>Иконка 2:</p>
-        <Star />
+        <Star className="star" />
       </div>
       <div>
         <p>Иконка 3:</p>
         <div style={{width: '42px', height: '42px'}}>
-          <Star2 />
+          <Star2 className="star" />
         </div>
       </div>
       <div>
