@@ -1,27 +1,34 @@
 import './App.css'
 
 function App() {
+
+  const handleClick = () => {
+    const a = document.createElement('a');
+    a.href = 'https://vk.com/im';
+    a.rel = 'noopener noreferrer';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+  }
+
+  const handleClick2 = () => {
+    const a = document.createElement('a');
+    a.href = 'vk://vk.com/im';
+    a.rel = 'noopener noreferrer';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+  }
+
   return (
     <div>
       <div>
-        <p>Ссылка deep:</p>
-        <a href={'vk://vk.com/'} target="_self" rel="noopener noreferrer">Клик</a>
+        <p>новый клик</p>
+        <button onClick={handleClick}>Новый клик</button>
       </div>
       <div>
-        <p>Ссылка deep сразу в сообщения:</p>
-        <a href={'vk://vk.com/im'} target="_self" rel="noopener noreferrer">Клик в сообщения</a>
-      </div>
-      <div>
-        <p>Ссылка deep 2:</p>
-        <a href={'vk://vk.com/asasas'} target="_self" rel="noopener noreferrer">Клик в сообщения</a>
-      </div>
-      <div>
-        <p>ссылка http:</p>
-        <a href={'https://vk.com/'} target="_self" rel="noopener noreferrer">Клик 2</a>
-      </div>
-      <div>
-        <p>ссылка http в сообщения:</p>
-        <a href={'https://vk.com/im'} target="_self" rel="noopener noreferrer">Клик 2 в сообщения</a>
+        <p>новый клик2</p>
+        <button onClick={handleClick2}>Новый клик 2</button>
       </div>
     </div>
   )
