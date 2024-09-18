@@ -15,6 +15,10 @@ function App() {
         <p>ссылка http:</p>
         <a href={'https://vk.com/'} target="_self" rel="noopener noreferrer">Клик 2</a>
       </div>
+      <div>
+        <p>ссылка http в сообщения:</p>
+        <a href={'https://vk.com/im'} target="_self" rel="noopener noreferrer">Клик 2 в сообщения</a>
+      </div>
     </div>
   )
 }
